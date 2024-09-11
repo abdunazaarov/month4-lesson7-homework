@@ -22,13 +22,13 @@ function dec(){
     if (offset > 100){
         offset -= 100;
     }
-    else if (offset >= 10){
+    else if (offset > 10){
         offset -= 10;
     }
-    else if (offset >= 0){
+    else if (offset <= 0){
         return null;
     }
-    else {
+    else if(offset <= 10) {
         offset--;
     }
     heading.innerHTML = offset
